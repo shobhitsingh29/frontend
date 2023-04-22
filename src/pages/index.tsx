@@ -1,4 +1,4 @@
-import { trpc } from '../utils/trpc';
+import { trpc } from '~/utils/trpc';
 import { NextPageWithLayout } from './_app';
 import { inferProcedureInput } from '@trpc/server';
 import Link from 'next/link';
@@ -46,7 +46,7 @@ const IndexPage: NextPageWithLayout = () => {
       </p>
 
       <h2>
-        Latest Posts
+        Latest wale Posts
         {postsQuery.status === 'loading' && '(loading)'}
       </h2>
 
