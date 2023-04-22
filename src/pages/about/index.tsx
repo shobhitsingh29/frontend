@@ -1,3 +1,7 @@
-export const About=()=>{
-    return 'about'
+
+const AboutPage: NextPageWithLayout = () => {
+    return "test"
+
 }
+
+export default AboutPage;
