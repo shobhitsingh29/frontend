@@ -2,7 +2,7 @@
 import { NextPageWithLayout } from '~/pages/_app';
 
 const AboutPage: NextPageWithLayout = () => {
-    return "test"
+    return <div>about</div>
 
 }
 
