@@ -1,7 +1,8 @@
-import { NextPageWithLayout } from '~/pages/_app';
+import { Content } from '~/components/home/content';
+import { NextPage } from 'next';
 
-const AboutPage: NextPageWithLayout = () => {
-  return <div>about</div>;
+const CandidatesPage: NextPage = () => {
+  return <Content />;
 };
 
-export default AboutPage;
+export default CandidatesPage;
