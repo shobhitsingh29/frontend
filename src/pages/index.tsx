@@ -3,6 +3,9 @@ import { NextPageWithLayout } from './_app';
 import { inferProcedureInput } from '@trpc/server';
 import Link from 'next/link';
 import { Fragment } from 'react';
+import { Button } from '@nextui-org/react';
+import { Navbar } from '@nextui-org/react';
+
 import type { AppRouter } from '~/server/routers/_app';
 
 const IndexPage: NextPageWithLayout = () => {
@@ -35,16 +38,22 @@ const IndexPage: NextPageWithLayout = () => {
 
   return (
     <>
-      <p>
-        If you get stuck, check <a href="https://trpc.io">the docs</a>, write a
-        message in our <a href="https://trpc.io/discord">Discord-channel</a>, or
-        write a message in{' '}
-        <a href="https://github.com/trpc/trpc/discussions">
-          GitHub Discussions
-        </a>
-        .
-      </p>
+      <p>write a message in </p>
 
+      <Navbar isBordered variant="floating">
+        <Navbar.Content>
+          <Navbar.Item>
+            <Button auto flat as={Link} href="#">
+              Home
+            </Button>
+          </Navbar.Item>
+          <Navbar.Item>
+            <Button auto flat as={Link} href="/candidates">
+              Candidates
+            </Button>
+          </Navbar.Item>
+        </Navbar.Content>
+      </Navbar>
       <h2>
         Latest wale Posts
         {postsQuery.status === 'loading' && '(loading)'}
