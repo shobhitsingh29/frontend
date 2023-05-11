@@ -21,12 +21,15 @@ export const SidebarItem = ({ icon, title, isActive, href = '' }: Props) => {
   };
   return (
     <NextLink href={href}>
-      <Button
-        css={{
-          color: '$accents9',
+      <Button css={{
+        color: '$accents9',
+        background: 'inherit',
+        '&:hover': {
           background: 'inherit',
+          color: 'inherit',
           maxWidth: '100%',
-        }}
+        },
+      }}
       >
         <Flex
           onClick={handleClick}
@@ -45,11 +48,11 @@ export const SidebarItem = ({ icon, title, isActive, href = '' }: Props) => {
             },
             ...(isActive
               ? {
-                  bg: '$blue200',
-                  '& svg path': {
-                    fill: '$blue600',
-                  },
-                }
+                bg: '$blue200',
+                '& svg path': {
+                  fill: '$blue600',
+                },
+              }
               : { '&:hover': { bg: '$accents2' } }),
           }}
           align={'center'}
