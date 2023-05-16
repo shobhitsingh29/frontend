@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed45870-6dad-4bcd-8ceb-7046e90ece32" name="Changes" comment="leetcode">
-      <change afterPath="$PROJECT_DIR$/src/components/leetcode/leetcodeContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/leetcode/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/portfolio/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/icons/accounts/export-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/accounts/export-icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/icons/breadcrumb/users-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/breadcrumb/users-icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="5ed45870-6dad-4bcd-8ceb-7046e90ece32" name="Changes" comment="leetcode" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +145,7 @@
       <workItem from="1683794096960" duration="40000" />
       <workItem from="1684195928687" duration="1536000" />
       <workItem from="1684197662444" duration="1405000" />
-      <workItem from="1684199402910" duration="4839000" />
+      <workItem from="1684199402910" duration="5220000" />
     </task>
     <task id="LOCAL-00001" summary="commmit">
       <created>1682123377353</created>
@@ -180,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683764820795</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="leetcode">
+      <created>1684204307746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684204307746</updated>
+    </task>
+    <task id="LOCAL-00005" summary="leetcode">
+      <created>1684204416856</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684204416856</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
