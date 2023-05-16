@@ -58,8 +58,9 @@ export const SidebarWrapper = () => {
                 href="accounts"
               />
               <SidebarItem
-                isActive={router.pathname === '/payments'}
-                title="Payments"
+                isActive={router.pathname === '/leetcode'}
+                title="Leetcode"
+                href="leetcode"
                 icon={<PaymentsIcon />}
               />
               <CollapseItems
