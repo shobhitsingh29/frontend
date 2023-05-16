@@ -5,6 +5,7 @@ import { createTheme, NextUIProvider } from '@nextui-org/react';
 import { trpc } from '~/utils/trpc';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { Layout } from '~/components/layout/layout';
+import { UserInfoProvider } from '~/contextProviders/userInfoProvider';
 
 export type NextPageWithLayout<
   TProps = Record<string, unknown>,
@@ -44,7 +45,9 @@ const MyApp = (({ Component, pageProps }: AppPropsWithLayout) => {
         }}
       >
         <NextUIProvider>
-          <Layout>{page}</Layout>
+          <UserInfoProvider>
+            <Layout>{page}</Layout>
+          </UserInfoProvider>
         </NextUIProvider>
       </NextThemesProvider>
     ));

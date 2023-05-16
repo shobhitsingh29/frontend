@@ -1,6 +1,6 @@
 {
-  "name": "@examples/trpc-next-prisma-starter",
-  "version": "10.9.1",
+  "name": "frontend",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "migrate-sqlite": "prisma migrate dev --name init --schema=./prisma/_sqlite/schema.prisma",
@@ -56,6 +56,7 @@
     "react-apexcharts": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.7",
+    "react-uploader": "^3.30.0",
     "superjson": "^1.7.4",
     "zod": "^3.0.0"
   },

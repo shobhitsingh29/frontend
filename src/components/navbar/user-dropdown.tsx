@@ -1,8 +1,11 @@
 import { Avatar, Dropdown, Navbar, Text } from '@nextui-org/react';
 import React from 'react';
 import { DarkModeSwitch } from './darkmodeswitch';
+import { useRouter } from 'next/router';
 
 export const UserDropdown = () => {
+  const router = useRouter();
+
   return (
     <Dropdown placement="bottom-right">
       <Navbar.Item>
@@ -41,7 +44,7 @@ export const UserDropdown = () => {
           Help & Feedback
         </Dropdown.Item>
         <Dropdown.Item key="logout" withDivider color="error">
-          Log Out
+          <span onClick={() => router.push(`/logout`)}>Log Out</span>
         </Dropdown.Item>
         <Dropdown.Item key="switch" withDivider>
           <DarkModeSwitch />
