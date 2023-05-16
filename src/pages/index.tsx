@@ -38,8 +38,6 @@ const IndexPage: NextPageWithLayout = () => {
 
   return (
     <>
-      <p>write a message in </p>
-
       <Navbar isBordered variant="floating">
         <Navbar.Content>
           <Navbar.Item>
@@ -50,6 +48,16 @@ const IndexPage: NextPageWithLayout = () => {
           <Navbar.Item>
             <Button auto flat as={Link} href="/candidates">
               Candidates
+            </Button>
+          </Navbar.Item>
+          <Navbar.Item>
+            <Button auto flat as={Link} href="/leetcode">
+              Leetcode
+            </Button>
+          </Navbar.Item>
+          <Navbar.Item>
+            <Button auto flat as={Link} href="/portfolio">
+              Portfolio
             </Button>
           </Navbar.Item>
         </Navbar.Content>
