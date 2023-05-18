@@ -71,7 +71,8 @@ export const AddUser = () => {
                 '@lg': { flexWrap: 'nowrap' },
               }}
             >
-              <Email />
+              {/* eslint-disable-next-line @typescript-eslint/no-empty-function */}
+              <Email onChange={() => {}} />
               <Input
                 label="Phone Number"
                 clearable
