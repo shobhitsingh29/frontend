@@ -7,6 +7,7 @@ interface SidebarContext {
 
 export const SidebarContext = createContext<SidebarContext>({
   collapsed: false,
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   setCollapsed: () => {},
 });
 

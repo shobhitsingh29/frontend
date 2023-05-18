@@ -14,9 +14,13 @@ export const UserInfoProvider = ({ children }: Props) => {
   });
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
   }, []);
   const updateCurrentUser = async (payload: React.SetStateAction<null>) => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     setUserInfo(payload);
     localStorage.setItem('userInfo', JSON.stringify(payload));
   };
