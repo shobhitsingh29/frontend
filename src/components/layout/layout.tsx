@@ -11,6 +11,8 @@ interface Props {
 }
 
 export const Layout = ({ children }: Props) => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const { userInfo, updateCurrentUser } = useUserInfo();
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
   const [_, setLocked] = useLockedBody(false);

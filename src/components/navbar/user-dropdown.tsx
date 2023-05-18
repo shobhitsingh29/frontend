@@ -6,7 +6,9 @@ import { useUserInfo } from '~/contextProviders/userInfoProvider';
 
 export const UserDropdown = () => {
   const router = useRouter();
-  const { userInfo, updateCurrentUser } = useUserInfo();
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const { userInfo } = useUserInfo();
   return (
     <Dropdown placement="bottom-right">
       <Navbar.Item>

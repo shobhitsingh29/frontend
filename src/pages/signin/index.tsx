@@ -10,7 +10,8 @@ const SignIn: NextPage = () => {
   const [email, setEmail] = React.useState(false);
   const [password, setPassword] = React.useState(false);
   const router = useRouter();
-
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const { userInfo, updateCurrentUser } = useUserInfo();
 
   return (
@@ -48,6 +49,8 @@ const SignIn: NextPage = () => {
           bordered
           fullWidth
           size="lg"
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />

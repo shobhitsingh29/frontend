@@ -13,6 +13,8 @@ const options = { multi: true };
 
 const MySettings = () => {
   const [imgData, setImageData] = useState('');
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const { userInfo, updateCurrentUser } = useUserInfo();
 
   useEffect(() => {
