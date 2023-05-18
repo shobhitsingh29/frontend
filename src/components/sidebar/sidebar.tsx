@@ -98,7 +98,7 @@ export const SidebarWrapper = () => {
                 icon={<ViewIcon />}
               />
               <SidebarItem
-                isActive={router.pathname === '/settings'}
+                isActive={router.pathname === '/mySettings'}
                 title="Settings"
                 icon={<SettingsIcon />}
               />

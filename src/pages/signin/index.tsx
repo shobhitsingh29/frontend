@@ -4,13 +4,14 @@ import { Flex } from '~/components/styles/flex';
 import { Button, Input } from '@nextui-org/react';
 import React from 'react';
 import { useRouter } from 'next/router';
+import Email from '~/components/email';
 
 const SignIn: NextPage = () => {
   const [email, setEmail] = React.useState(false);
   const [password, setPassword] = React.useState(false);
   const router = useRouter();
 
-  const { userInfo, fetchCurrentUser } = useUserInfo();
+  const { userInfo, updateCurrentUser } = useUserInfo();
 
   return (
     <Flex
@@ -28,14 +29,10 @@ const SignIn: NextPage = () => {
           '@lg': { flexWrap: 'nowrap' },
         }}
       >
-        <Input
-          label="Email"
-          clearable
-          bordered
-          fullWidth
-          size="lg"
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
+        <Email
+          onChange={(e: {
+            target: { value: boolean | ((prevState: boolean) => boolean) };
+          }) => setEmail(e.target.value)}
         />
       </Flex>
       <Flex
@@ -58,7 +55,7 @@ const SignIn: NextPage = () => {
       <Button
         auto
         onClick={() => {
-          fetchCurrentUser({ email, password });
+          updateCurrentUser({ email, password });
           router.push(`/`);
         }}
       >

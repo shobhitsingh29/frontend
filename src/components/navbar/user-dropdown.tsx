@@ -2,10 +2,11 @@ import { Avatar, Dropdown, Navbar, Text } from '@nextui-org/react';
 import React from 'react';
 import { DarkModeSwitch } from './darkmodeswitch';
 import { useRouter } from 'next/router';
+import { useUserInfo } from '~/contextProviders/userInfoProvider';
 
 export const UserDropdown = () => {
   const router = useRouter();
-
+  const { userInfo, updateCurrentUser } = useUserInfo();
   return (
     <Dropdown placement="bottom-right">
       <Navbar.Item>
@@ -15,7 +16,10 @@ export const UserDropdown = () => {
             as="button"
             color="secondary"
             size="md"
-            src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+            src={
+              userInfo?.imgData ??
+              'https://i.pravatar.cc/150?u=a042581f4e29026704d'
+            }
           />
         </Dropdown.Trigger>
       </Navbar.Item>
@@ -32,7 +36,7 @@ export const UserDropdown = () => {
           </Text>
         </Dropdown.Item>
         <Dropdown.Item key="settings" withDivider>
-          My Settings
+          <span onClick={() => router.push(`/mySettings`)}>My Settings</span>
         </Dropdown.Item>
         <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
         <Dropdown.Item key="analytics" withDivider>

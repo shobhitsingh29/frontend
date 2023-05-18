@@ -1,6 +1,7 @@
 import { Button, Divider, Input, Modal, Text } from '@nextui-org/react';
 import React from 'react';
 import { Flex } from '../styles/flex';
+import Email from '~/components/email';
 
 export const AddUser = () => {
   const [visible, setVisible] = React.useState(false);
@@ -70,14 +71,7 @@ export const AddUser = () => {
                 '@lg': { flexWrap: 'nowrap' },
               }}
             >
-              <Input
-                label="Email"
-                clearable
-                bordered
-                fullWidth
-                size="lg"
-                placeholder="Email"
-              />
+              <Email />
               <Input
                 label="Phone Number"
                 clearable

@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+#/worksapce/files
+./idea
+.idea
+
+
 # testing
 /coverage
 

@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState, useContext } from 'react';
 
 export const UserInfoContext = createContext({});
 
@@ -7,17 +7,25 @@ interface Props {
 }
 
 export const UserInfoProvider = ({ children }: Props) => {
-  const [userInfo, setUserInfo] = useState(null);
+  const [userInfo, setUserInfo] = useState({
+    email: '',
+    password: '',
+    imgData: '',
+  });
 
-  const fetchCurrentUser = async (payload: React.SetStateAction<null>) => {
+  useEffect(() => {
+    setUserInfo(JSON.parse(localStorage.getItem('userInfo')));
+  }, []);
+  const updateCurrentUser = async (payload: React.SetStateAction<null>) => {
     setUserInfo(payload);
+    localStorage.setItem('userInfo', JSON.stringify(payload));
   };
 
   return (
-    <UserInfoContext.Provider value={{ userInfo, fetchCurrentUser }}>
+    <UserInfoContext.Provider value={{ userInfo, updateCurrentUser }}>
       {children}
     </UserInfoContext.Provider>
   );
 };
 
-export const useUserInfo = () => React.useContext(UserInfoContext);
+export const useUserInfo = () => useContext(UserInfoContext);
