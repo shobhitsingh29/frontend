@@ -31,6 +31,7 @@ specifiers:
   react-apexcharts: ^1.4.0
   react-dom: ^18.2.0
   react-markdown: ^8.0.7
+  react-uploader: ^3.30.0
   start-server-and-test: ^1.12.0
   superjson: ^1.7.4
   tsx: ^3.9.0
@@ -56,6 +57,7 @@ dependencies:
   react-apexcharts: 1.4.0_fnhcsb7lygaadw7ghmriwdk5ma
   react-dom: 18.2.0_react@18.2.0
   react-markdown: 8.0.7_3stiutgnnbnfnf3uowm5cip22i
+  react-uploader: 3.30.0_react@18.2.0
   superjson: 1.12.2
   zod: 3.20.2
 
@@ -1662,6 +1664,10 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
+  /@upload-io/upload-api-client-upload-js/2.15.0:
+    resolution: {integrity: sha512-UGqT4wxCDhTTKnTLvqtKCyPJSswA2z6/Z6/sMakWGdJBBuwCHcOyXgoWafbPILrgWp3oMMQjnTfwwMBmR0O54w==}
+    dev: false
+
   /@vitest/expect/0.28.4:
     resolution: {integrity: sha512-JqK0NZ4brjvOSL8hXAnIsfi+jxDF7rH/ZWCGCt0FAqRnVFc1hXsfwXksQvEnKqD84avRt3gmeXoK4tNbmkoVsQ==}
     dependencies:
@@ -1957,6 +1963,10 @@ packages:
     resolution: {integrity: sha512-Pj779qHxV2tuapviy1bSZNEL1maXr13bPYpsvSDB68HlYcYuhlDrmGd63i0JHMCLKzc7rUSNIrpdJlhVlNwrxA==}
     engines: {node: '>= 0.8.0'}
     dev: true
+
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
 
   /cli-truncate/3.1.0:
     resolution: {integrity: sha512-wfOBkjXteqSnI59oPcJkcPl/ZmwvMMOj340qUIY1SKZCv0B9Cf4D4fAucRkIKQmsIuYK3x1rrgU7MeGRruiuiA==}
@@ -4190,6 +4200,10 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /preact/10.14.1:
+    resolution: {integrity: sha512-4XDSnUisk3YFBb3p9WeKeH1mKoxdFUsaXcvxs9wlpYR1wax/TWJVqhwmIWbByX0h7jMEJH6Zc5J6jqc58FKaNQ==}
+    dev: false
+
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -4224,6 +4238,10 @@ packages:
     requiresBuild: true
     dependencies:
       '@prisma/engines': 4.9.0
+
+  /progress-smoother/1.4.0:
+    resolution: {integrity: sha512-ctIG/KF/3DQ1zQHMWbXjcnicggTsEzZEA2JEnJNrPtK88tmqN9cfQf01yfLWGCBF93R5XN1EUe/z/IV5NKrmCw==}
+    dev: false
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -4318,6 +4336,15 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /react-uploader/3.30.0_react@18.2.0:
+    resolution: {integrity: sha512-oteqThiQjONQSRFbwLZyVFfFHmDXgISoXPaBTn1lmeSNUR0cvBVMrykTzzcH4OTJsM5O+zHykAMcSHJagjyQqg==}
+    peerDependencies:
+      react: '>=16.3.0'
+    dependencies:
+      react: 18.2.0
+      uploader: 3.30.0
     dev: false
 
   /react/18.2.0:
@@ -4984,6 +5011,21 @@ packages:
       '@types/unist': 2.0.6
       unist-util-is: 5.2.1
       unist-util-visit-parents: 5.1.3
+    dev: false
+
+  /upload-js/2.20.0:
+    resolution: {integrity: sha512-pwu7NejaJrqQrv8w4gfYRLlqgzJXggZs7pleV2kMHL/n8mCDWTX19j5WS/+bBZbtuGTZLtWjt+HJtyxXxiumIA==}
+    dependencies:
+      '@upload-io/upload-api-client-upload-js': 2.15.0
+      progress-smoother: 1.4.0
+    dev: false
+
+  /uploader/3.30.0:
+    resolution: {integrity: sha512-/o/UAGR6E6Pwo6KT23FlPprKmk3dBiB61IlXT79pNXDeLus94Dq+OiV5HFl3Fft83aM4o7tWqzbvSuaOvAQNmg==}
+    dependencies:
+      classnames: 2.3.2
+      preact: 10.14.1
+      upload-js: 2.20.0
     dev: false
 
   /uri-js/4.4.1:
