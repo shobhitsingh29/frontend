@@ -74,6 +74,7 @@ const options: Props['options'] = {
       colors: ['red'],
     },
   },
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   markers: false,
 };

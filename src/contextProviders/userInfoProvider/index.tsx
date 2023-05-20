@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState, useContext } from 'react';
+import { trpc } from '~/utils/trpc';
 
 export const UserInfoContext = createContext({});
 
@@ -12,6 +13,11 @@ export const UserInfoProvider = ({ children }: Props) => {
     password: '',
     imgData: '',
   });
+
+  const postsQuery = trpc.upload.byId.useQuery({ id: 1 });
+  useEffect(() => {
+    console.log(postsQuery.data, '***');
+  }, [postsQuery.data]);
 
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
