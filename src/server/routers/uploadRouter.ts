@@ -8,23 +8,24 @@ import { z } from 'zod';
 import { TRPCError } from '@trpc/server';
 import { Prisma } from '@prisma/client';
 
-const defaultPostSelect = Prisma.validator<Prisma.uploadSelect>()({
+const defaultUploadSelect = Prisma.validator<Prisma.uploadimgSelect>()({
   id: true,
   url: true,
+  email: true,
 });
 export const uploadRouter = router({
   byId: publicProcedure
     .input(
       z.object({
-        id: z.number(),
+        id: z.string().uuid().optional(),
       }),
     )
     .query(async ({ input }) => {
       const { id } = input;
 
-      const data = await prisma.upload.findFirst({
+      const data = await prisma.uploadimg.findFirst({
         where: { id },
-        select: defaultPostSelect,
+        select: defaultUploadSelect,
       });
       if (!data) {
         throw new TRPCError({
@@ -33,5 +34,19 @@ export const uploadRouter = router({
         });
       }
       return data;
+    }),
+  add: publicProcedure
+    .input(
+      z.object({
+        id: z.string().uuid(),
+        url: z.string().min(1),
+        email: z.string().min(1),
+      }),
+    )
+    .mutation(async ({ input }) => {
+      return await prisma.uploadimg.create({
+        data: input,
+        select: defaultUploadSelect,
+      });
     }),
 });

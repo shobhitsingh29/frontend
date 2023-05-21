@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ed45870-6dad-4bcd-8ceb-7046e90ece32" name="Changes" comment="user info">
-      <change afterPath="$PROJECT_DIR$/src/server/routers/uploadRouter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/charts/steam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/charts/steam.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/table/render-cell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/render-cell.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contextProviders/userInfoProvider/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contextProviders/userInfoProvider/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/mySettings/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mySettings/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/routers/_app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routers/_app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/routers/uploadRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routers/uploadRouter.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,17 +87,7 @@
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="build-prisma" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build-prisma" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -114,6 +103,16 @@
       <command value="run" />
       <scripts>
         <script value="db-seed" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -141,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.db-seed" />
-        <item itemvalue="npm.build-prisma" />
         <item itemvalue="npm.postinstall" />
+        <item itemvalue="npm.db-seed" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +167,7 @@
       <workItem from="1684236638663" duration="2000" />
       <workItem from="1684269922864" duration="6415000" />
       <workItem from="1684365216013" duration="7664000" />
-      <workItem from="1684606859232" duration="12959000" />
+      <workItem from="1684606859232" duration="18986000" />
     </task>
     <task id="LOCAL-00001" summary="commmit">
       <created>1682123377353</created>
@@ -268,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684416996175</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="user info">
+      <created>1684622848420</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684622848420</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

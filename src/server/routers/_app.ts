@@ -9,7 +9,7 @@ export const appRouter = router({
   healthcheck: publicProcedure.query(() => 'yay!'),
 
   post: postRouter,
-  upload: uploadRouter,
+  uploadimg: uploadRouter,
 });
 
 export type AppRouter = typeof appRouter;
