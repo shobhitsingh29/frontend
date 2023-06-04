@@ -5,6 +5,7 @@ specifiers:
   '@playwright/test': ^1.26.1
   '@prisma/client': ^4.7.1
   '@react-buddy/ide-toolbox-next': ^2.4.0
+  '@stackblitz/sdk': ^1.9.0
   '@tanstack/react-query': ^4.3.8
   '@trpc/client': ^10.9.1
   '@trpc/next': ^10.9.1
@@ -32,6 +33,7 @@ specifiers:
   react-apexcharts: ^1.4.0
   react-dom: ^18.2.0
   react-markdown: ^8.0.7
+  react-ts-tradingview-widgets: ^1.0.14
   react-uploader: ^3.30.0
   start-server-and-test: ^1.12.0
   superjson: ^1.7.4
@@ -47,6 +49,7 @@ dependencies:
   '@nextui-org/react': 1.0.0-beta.12_biqbaboplfbrettd7655fr4n2y
   '@prisma/client': 4.9.0_prisma@4.9.0
   '@react-buddy/ide-toolbox-next': 2.4.0_next@13.2.4+react@18.2.0
+  '@stackblitz/sdk': 1.9.0
   '@tanstack/react-query': 4.24.4_biqbaboplfbrettd7655fr4n2y
   '@trpc/client': 10.9.1_@trpc+server@10.9.1
   '@trpc/next': 10.9.1_74oea6hnc6fy3umtrj34cwpgwm
@@ -60,6 +63,7 @@ dependencies:
   react-apexcharts: 1.4.0_fnhcsb7lygaadw7ghmriwdk5ma
   react-dom: 18.2.0_react@18.2.0
   react-markdown: 8.0.7_3stiutgnnbnfnf3uowm5cip22i
+  react-ts-tradingview-widgets: 1.0.14_biqbaboplfbrettd7655fr4n2y
   react-uploader: 3.30.0_react@18.2.0
   superjson: 1.12.2
   uploader: 3.30.0
@@ -1389,6 +1393,10 @@ packages:
   /@sideway/pinpoint/2.0.0:
     resolution: {integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==}
     dev: true
+
+  /@stackblitz/sdk/1.9.0:
+    resolution: {integrity: sha512-3m6C7f8pnR5KXys/Hqx2x6ylnpqOak6HtnZI6T5keEO0yT+E4Spkw37VEbdwuC+2oxmjdgq6YZEgiKX7hM1GmQ==}
+    dev: false
 
   /@stitches/react/1.2.8_react@18.2.0:
     resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
@@ -4346,6 +4354,16 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /react-ts-tradingview-widgets/1.0.14_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-gnpW/p2pi428nm5JshCjT69pJETT0eNJC7pI1juRwwNGNT67x8ZETTszK6vHgMnye3LUGiMJNXQSllzSbxTx/Q==}
+    peerDependencies:
+      react: ^17.0.2 || ^18.1.0
+      react-dom: ^17.0.2 || ^18.1.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-uploader/3.30.0_react@18.2.0:
