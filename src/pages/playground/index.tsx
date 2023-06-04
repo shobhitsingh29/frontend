@@ -15,6 +15,7 @@ const Playground = () => {
     },
   };
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   function embedProject({ name, file }) {
     sdk.embedProjectId('embed', name, {
