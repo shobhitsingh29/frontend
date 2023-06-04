@@ -7,11 +7,12 @@ type PostByIdOutput = RouterOutput['post']['byId'];
 
 function PostItem(props: { post: PostByIdOutput }) {
   const { post } = props;
+  const type = 'code';
   return (
     <>
       <h1>{post.title}</h1>
       <em>Created {post.createdAt.toLocaleDateString('en-us')}</em>
-      {post?.type === 'code' ? (
+      {type === 'code' ? (
         <pre
           style={{
             padding: '16px',
