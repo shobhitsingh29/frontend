@@ -43,6 +43,7 @@
     "@nextui-org/react": "^1.0.0-beta.12",
     "@prisma/client": "^4.7.1",
     "@react-buddy/ide-toolbox-next": "^2.4.0",
+    "@stackblitz/sdk": "^1.9.0",
     "@tanstack/react-query": "^4.3.8",
     "@trpc/client": "^10.9.1",
     "@trpc/next": "^10.9.1",

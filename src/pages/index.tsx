@@ -70,6 +70,11 @@ const IndexPage: NextPageWithLayout = () => {
               mySettings
             </Button>
           </Navbar.Item>
+          <Navbar.Item>
+            <Button auto flat as={Link} href="/playground">
+              Playground
+            </Button>
+          </Navbar.Item>
         </Navbar.Content>
       </Navbar>
       <h2>

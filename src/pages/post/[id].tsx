@@ -11,9 +11,37 @@ function PostItem(props: { post: PostByIdOutput }) {
     <>
       <h1>{post.title}</h1>
       <em>Created {post.createdAt.toLocaleDateString('en-us')}</em>
-
-      <p>{post.text}</p>
-
+      {post?.type === 'code' ? (
+        <pre
+          style={{
+            padding: '16px',
+            overflow: 'auto',
+            fontSize: '85%',
+            lineHeight: 1.45,
+            backgroundColor: '#f6f8fa',
+            borderRadius: '6px',
+          }}
+        >
+          <code style={{ color: ' grey', background: 'none' }}>
+            {post.text}
+          </code>
+        </pre>
+      ) : (
+        <pre
+          style={{
+            padding: '16px',
+            overflow: 'auto',
+            fontSize: '85%',
+            lineHeight: 1.45,
+            backgroundColor: '#f6f8fa',
+            borderRadius: '6px',
+          }}
+        >
+          <code style={{ color: ' grey', background: 'none' }}>
+            {post.text}
+          </code>
+        </pre>
+      )}
       <h2>Raw data:</h2>
       <pre>{JSON.stringify(post, null, 4)}</pre>
     </>

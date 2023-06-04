@@ -30,7 +30,7 @@ export const NotificationsDropdown = () => {
           },
         }}
       >
-        <Dropdown.Section title="Notificacions">
+        <Dropdown.Section title="Notifications">
           <Dropdown.Item
             key="1"
             showFullDescription

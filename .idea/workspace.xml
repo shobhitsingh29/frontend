@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed45870-6dad-4bcd-8ceb-7046e90ece32" name="Changes" comment="user info">
+    <list default="true" id="5ed45870-6dad-4bcd-8ceb-7046e90ece32" name="Changes" comment="stocks">
+      <change afterPath="$PROJECT_DIR$/src/pages/playground/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contextProviders/userInfoProvider/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contextProviders/userInfoProvider/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/mySettings/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mySettings/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/routers/_app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routers/_app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/routers/uploadRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routers/uploadRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/notifications-dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/notifications-dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/post/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/post/[id].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,22 +51,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/shosingh/Projects/frontend/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/shosingh/Projects/frontend/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
-    "ts.external.directory.path": "/Users/shosingh/Projects/frontend/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowLeetcode.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/shosingh/Projects/frontend/src/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/shosingh/Projects/frontend/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;leetcode.id&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/shosingh/Projects/frontend/node_modules/typescript/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -78,8 +78,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -167,7 +167,12 @@
       <workItem from="1684236638663" duration="2000" />
       <workItem from="1684269922864" duration="6415000" />
       <workItem from="1684365216013" duration="7664000" />
-      <workItem from="1684606859232" duration="18986000" />
+      <workItem from="1684606859232" duration="20738000" />
+      <workItem from="1684700782828" duration="3742000" />
+      <workItem from="1685631065526" duration="92000" />
+      <workItem from="1685631301995" duration="43000" />
+      <workItem from="1685727070499" duration="7662000" />
+      <workItem from="1685902847395" duration="6382000" />
     </task>
     <task id="LOCAL-00001" summary="commmit">
       <created>1682123377353</created>
@@ -274,7 +279,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684622848420</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="user info">
+      <created>1684628693438</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684628693438</updated>
+    </task>
+    <task id="LOCAL-00017" summary="user info">
+      <created>1685631116884</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1685631116884</updated>
+    </task>
+    <task id="LOCAL-00018" summary="stocks">
+      <created>1685747990684</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685747990684</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +365,7 @@
     <MESSAGE value="commmit demo files with routing &amp; pages" />
     <MESSAGE value="leetcode" />
     <MESSAGE value="user info" />
-    <option name="LAST_COMMIT_MESSAGE" value="user info" />
+    <MESSAGE value="stocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="stocks" />
   </component>
 </project>
