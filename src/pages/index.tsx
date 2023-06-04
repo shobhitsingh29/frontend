@@ -75,6 +75,11 @@ const IndexPage: NextPageWithLayout = () => {
               Playground
             </Button>
           </Navbar.Item>
+          <Navbar.Item>
+            <Button auto flat as={Link} href="/google">
+              Google
+            </Button>
+          </Navbar.Item>
         </Navbar.Content>
       </Navbar>
       <h2>
