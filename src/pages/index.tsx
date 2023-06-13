@@ -2,13 +2,16 @@ import { trpc } from '~/utils/trpc';
 import { NextPageWithLayout } from './_app';
 import { inferProcedureInput } from '@trpc/server';
 import Link from 'next/link';
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { Button } from '@nextui-org/react';
 import { Navbar } from '@nextui-org/react';
 
+import Typester from '~/components/typester';
 import type { AppRouter } from '~/server/routers/_app';
 
 const IndexPage: NextPageWithLayout = () => {
+  const [value, setValue] = useState('');
+
   const utils = trpc.useContext();
   const postsQuery = trpc.post.list.useInfiniteQuery(
     {
@@ -130,7 +133,7 @@ const IndexPage: NextPageWithLayout = () => {
           //    ^?
           const input: Input = {
             title: values.title as string,
-            text: values.text as string,
+            text: value as string,
           };
           try {
             await addPost.mutateAsync(input);
@@ -153,7 +156,7 @@ const IndexPage: NextPageWithLayout = () => {
         <br />
         <label htmlFor="text">Text:</label>
         <br />
-        <textarea id="text" name="text" disabled={addPost.isLoading} />
+        {!addPost.isLoading && <Typester value={value} setValue={setValue} />}
         <br />
         <input type="submit" disabled={addPost.isLoading} />
         {addPost.error && (
