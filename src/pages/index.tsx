@@ -9,6 +9,7 @@ import { Flex } from '~/components/styles/flex';
 
 import Typester from '~/components/typester';
 import type { AppRouter } from '~/server/routers/_app';
+import { Spotify } from '~/components/spotify';
 
 const IndexPage: NextPageWithLayout = () => {
   const [value, setValue] = useState('');
@@ -87,6 +88,7 @@ const IndexPage: NextPageWithLayout = () => {
           </Navbar.Item>
         </Navbar.Content>
       </Navbar>
+      <Spotify />
       <h2>
         Latest wale Posts
         {postsQuery.status === 'loading' && '(loading)'}
