@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed45870-6dad-4bcd-8ceb-7046e90ece32" name="Changes" comment="playgrnd12">
-      <change afterPath="$PROJECT_DIR$/src/components/typester/index.tsx" afterDir="false" />
+    <list default="true" id="5ed45870-6dad-4bcd-8ceb-7046e90ece32" name="Changes" comment="added rich text">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -139,8 +135,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.postinstall" />
         <item itemvalue="npm.db-seed" />
       </list>
@@ -171,7 +167,10 @@
       <workItem from="1685631301995" duration="43000" />
       <workItem from="1685727070499" duration="7662000" />
       <workItem from="1685902847395" duration="17279000" />
-      <workItem from="1686695118062" duration="4484000" />
+      <workItem from="1686695118062" duration="4595000" />
+      <workItem from="1687032328816" duration="3501000" />
+      <workItem from="1687162186123" duration="7000" />
+      <workItem from="1687575729050" duration="701000" />
     </task>
     <task id="LOCAL-00001" summary="commmit">
       <created>1682123377353</created>
@@ -334,7 +333,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685922912662</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added rich text">
+      <created>1686699717524</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686699717524</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added rich text">
+      <created>1687575771845</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687575771845</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +416,7 @@
     <MESSAGE value="playgrnd" />
     <MESSAGE value="playgrnd1" />
     <MESSAGE value="playgrnd12" />
-    <option name="LAST_COMMIT_MESSAGE" value="playgrnd12" />
+    <MESSAGE value="added rich text" />
+    <option name="LAST_COMMIT_MESSAGE" value="added rich text" />
   </component>
 </project>
