@@ -2,15 +2,17 @@ import { trpc } from '~/utils/trpc';
 import { NextPageWithLayout } from './_app';
 import { inferProcedureInput } from '@trpc/server';
 import Link from 'next/link';
-import { Fragment, useState } from 'react';
-import { Button } from '@nextui-org/react';
-import { Navbar } from '@nextui-org/react';
+import React, { Fragment, useState } from 'react';
+import { Button, Switch, Navbar, Textarea } from '@nextui-org/react';
+import { DevIcon } from '~/components/icons/sidebar/dev-icon';
+import { Flex } from '~/components/styles/flex';
 
 import Typester from '~/components/typester';
 import type { AppRouter } from '~/server/routers/_app';
 
 const IndexPage: NextPageWithLayout = () => {
   const [value, setValue] = useState('');
+  const [isCodePost, setIsCodePost] = useState(true);
 
   const utils = trpc.useContext();
   const postsQuery = trpc.post.list.useInfiniteQuery(
@@ -152,11 +154,30 @@ const IndexPage: NextPageWithLayout = () => {
           type="text"
           disabled={addPost.isLoading}
         />
-
         <br />
         <label htmlFor="text">Text:</label>
         <br />
-        {!addPost.isLoading && <Typester value={value} setValue={setValue} />}
+        <Switch
+          checked={isCodePost}
+          size="xl"
+          color="success"
+          icon={<DevIcon />}
+          onChange={(e) => setIsCodePost(!isCodePost)}
+        />
+
+        <Flex>
+          {isCodePost ? (
+            <Typester value={value} setValue={setValue} />
+          ) : (
+            <Textarea
+              id="text"
+              name="text"
+              disabled={addPost.isLoading}
+              placeholder="Enter your post"
+            />
+          )}
+        </Flex>
+        <br />
         <br />
         <input type="submit" disabled={addPost.isLoading} />
         {addPost.error && (
